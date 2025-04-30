@@ -30,7 +30,7 @@ You can use the `-c` flag to specify the exact path to the configuration file.
 
 Clone this repo into `$VIRTUAL_ENV_HOME`.
 
-Setup virtualenv based on Pytohn 3.11: `python3.11 -m venv b3`
+Setup virtualenv based on Python 3.11: `python3.11 -m venv b3`
 
 Install requirements:
 

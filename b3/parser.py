@@ -78,7 +78,7 @@ class Parser:
     wrapper = None  # textwrapper instance
 
     msgPrefix = ""  # say prefix
-    pmPrefix = "^8[pm]^7"  # private message prefix
+    pmPrefix = "^3[pm]^7"  # private message prefix
     prefix = "^2%s:^3"  # B3 prefix
 
     # default messages in case one is missing from config file
