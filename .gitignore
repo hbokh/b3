@@ -6,11 +6,14 @@ desktop.ini
 *.orig
 *.patch
 *.lnk
+bin
+lib
 build
 dist
 releases/*
 b3.database.sqlite
 venv*/
+pyvenv.cfg
 scratch.py
 .pytest_cache
 .tox

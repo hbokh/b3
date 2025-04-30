@@ -663,7 +663,7 @@ class Parser:
         <data> can be either a group keyword or a group level.
         Raises KeyError if group is not found.
         """
-        if type(data) is int or isinstance(data, str) and data.isdigit():
+        if type(data) is int or (isinstance(data, str) and data.isdigit()):
             g = Group(level=data)
         else:
             g = Group(keyword=data)

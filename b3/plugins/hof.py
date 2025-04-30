@@ -30,7 +30,7 @@ def record_holder(
     )
     with console.storage.query(q) as cursor:
         if (r := cursor.getOneRow()) and (
-            clients := console.clients.getByDB(f'@{r["player_id"]}')
+            clients := console.clients.getByDB(f"@{r['player_id']}")
         ):
             return Record(
                 plugin_name=plugin_name,
@@ -53,7 +53,7 @@ def update_hall_of_fame(
         curr_record = record_holder(console, plugin_name, map_name)
     except LookupError:
         q = (
-            f"INSERT INTO plugin_hof(plugin_name, map_name, player_id, score) "
+            f"INSERT OR REPLACE INTO plugin_hof(plugin_name, map_name, player_id, score) "
             f"VALUES('{plugin_name}', '{map_name}', {client.id}, {score})"
             ""
         )

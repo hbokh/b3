@@ -11,7 +11,7 @@ class Config_reading_TestCase(Admin_TestCase):
     Test case base class that ease assertions against calls to self.p.warning and self.p.error methods.
     """
 
-    MESSAGE_BEACON = None
+    MESSAGE_BEACON = "None"
 
     def __init__(self, *args, **kwargs):
         Admin_TestCase.__init__(self, *args, **kwargs)

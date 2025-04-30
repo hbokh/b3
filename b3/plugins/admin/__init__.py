@@ -262,8 +262,7 @@ class AdminPlugin(b3.plugin.Plugin):
             self.warn_alert_kick_num = raw_data
         except NoOptionError:
             self.warning(
-                "could not find warn/alert_kick_num in config file, "
-                "using default: %s",
+                "could not find warn/alert_kick_num in config file, using default: %s",
                 self.warn_alert_kick_num,
             )
         except ValueError as e:

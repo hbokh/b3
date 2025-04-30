@@ -129,6 +129,12 @@ class CommonDefaultTestMethodsMixin:
                     "disabled": False,
                     "path": None,
                 },
+                {
+                    "name": "headshotsurt",
+                    "conf": "@b3/conf/plugin_headshotsurt.ini",
+                    "disabled": False,
+                    "path": None,
+                },
             ],
             self.conf.get_plugins(),
         )
@@ -157,6 +163,7 @@ class Test_CfgMainConfigParser(CommonDefaultTestMethodsMixin, unittest.TestCase)
                 "nader",
                 "booter",
                 "flagstats",
+                "headshotsurt",
             ],
         )
 
