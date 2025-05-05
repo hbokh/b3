@@ -308,7 +308,7 @@ class WeaponKillPlugin(abc.ABC, b3.plugin.Plugin):
 
         if record.is_new:
             message = (
-                f"^2{record.score} ^{self.weapon_name} kills: congratulations "
+                f"^2{record.score} ^7{self.weapon_name} kills: congratulations "
                 f"^3{record.client.exactName}^7, new record on this map!!"
             )
         else:

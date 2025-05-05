@@ -26,7 +26,7 @@ where `B3` is located or in the `b3/conf` directory.
 
 You can use the `-c` flag to specify the exact path to the configuration file.
 
-## Development on macOS
+## Development in Python virtual environment
 
 Clone this repo into `$VIRTUAL_ENV_HOME`.
 
